@@ -1,0 +1,193 @@
+{
+  "query": {
+    "measures": [
+      "Events.visitors",
+      "Views.watched_sec"
+    ],
+    "timeDimensions": [
+      {
+        "dimension": "Events.timestamp_iso8601",
+        "granularity": "day",
+        "dateRange": [
+          "2020-02-01T00:00:00.000",
+          "2020-02-29T23:59:59.999"
+        ]
+      }
+    ],
+    "filters": [],
+    "timezone": "UTC",
+    "dimensions": []
+  },
+  "data": [
+    {
+      "Events.timestamp_iso8601": "2020-02-01T00:00:00.000",
+      "Events.visitors": "9",
+      "Views.watched_sec": "793"
+    },
+    {
+      "Events.timestamp_iso8601": "2020-02-02T00:00:00.000",
+      "Events.visitors": "6",
+      "Views.watched_sec": "1116"
+    },
+    {
+      "Events.timestamp_iso8601": "2020-02-03T00:00:00.000",
+      "Events.visitors": "16",
+      "Views.watched_sec": "932"
+    },
+    {
+      "Events.timestamp_iso8601": "2020-02-04T00:00:00.000",
+      "Events.visitors": "16",
+      "Views.watched_sec": "886"
+    },
+    {
+      "Events.timestamp_iso8601": "2020-02-05T00:00:00.000",
+      "Events.visitors": "16",
+      "Views.watched_sec": "173"
+    },
+    {
+      "Events.timestamp_iso8601": "2020-02-06T00:00:00.000",
+      "Events.visitors": "11",
+      "Views.watched_sec": "74"
+    },
+    {
+      "Events.timestamp_iso8601": "2020-02-07T00:00:00.000",
+      "Events.visitors": "16",
+      "Views.watched_sec": "1136"
+    },
+    {
+      "Events.timestamp_iso8601": "2020-02-08T00:00:00.000",
+      "Events.visitors": "14",
+      "Views.watched_sec": "385"
+    },
+    {
+      "Events.timestamp_iso8601": "2020-02-09T00:00:00.000",
+      "Events.visitors": "21",
+      "Views.watched_sec": "3888"
+    },
+    {
+      "Events.timestamp_iso8601": "2020-02-10T00:00:00.000",
+      "Events.visitors": "43",
+      "Views.watched_sec": "10321"
+    },
+    {
+      "Events.timestamp_iso8601": "2020-02-11T00:00:00.000",
+      "Events.visitors": "61",
+      "Views.watched_sec": "10141"
+    },
+    {
+      "Events.timestamp_iso8601": "2020-02-12T00:00:00.000",
+      "Events.visitors": "59",
+      "Views.watched_sec": "7617"
+    },
+    {
+      "Events.timestamp_iso8601": "2020-02-13T00:00:00.000",
+      "Events.visitors": "34",
+      "Views.watched_sec": "3127"
+    },
+    {
+      "Events.timestamp_iso8601": "2020-02-14T00:00:00.000",
+      "Events.visitors": "36",
+      "Views.watched_sec": "3830"
+    },
+    {
+      "Events.timestamp_iso8601": "2020-02-15T00:00:00.000",
+      "Events.visitors": "12",
+      "Views.watched_sec": "576"
+    },
+    {
+      "Events.timestamp_iso8601": "2020-02-16T00:00:00.000",
+      "Events.visitors": "9",
+      "Views.watched_sec": "1717"
+    },
+    {
+      "Events.timestamp_iso8601": "2020-02-17T00:00:00.000",
+      "Events.visitors": "62",
+      "Views.watched_sec": "6219"
+    },
+    {
+      "Events.timestamp_iso8601": "2020-02-18T00:00:00.000",
+      "Events.visitors": "51",
+      "Views.watched_sec": "5420"
+    },
+    {
+      "Events.timestamp_iso8601": "2020-02-19T00:00:00.000",
+      "Events.visitors": "52",
+      "Views.watched_sec": "9462"
+    },
+    {
+      "Events.timestamp_iso8601": "2020-02-20T00:00:00.000",
+      "Events.visitors": "53",
+      "Views.watched_sec": "8869"
+    },
+    {
+      "Events.timestamp_iso8601": "2020-02-21T00:00:00.000",
+      "Events.visitors": "47",
+      "Views.watched_sec": "7318"
+    },
+    {
+      "Events.timestamp_iso8601": "2020-02-22T00:00:00.000",
+      "Events.visitors": "8",
+      "Views.watched_sec": "552"
+    },
+    {
+      "Events.timestamp_iso8601": "2020-02-23T00:00:00.000",
+      "Events.visitors": "15",
+      "Views.watched_sec": "1203"
+    },
+    {
+      "Events.timestamp_iso8601": "2020-02-24T00:00:00.000",
+      "Events.visitors": "63",
+      "Views.watched_sec": "5508"
+    },
+    {
+      "Events.timestamp_iso8601": "2020-02-25T00:00:00.000",
+      "Events.visitors": "60",
+      "Views.watched_sec": "10664"
+    },
+    {
+      "Events.timestamp_iso8601": "2020-02-26T00:00:00.000",
+      "Events.visitors": "68",
+      "Views.watched_sec": "6624"
+    },
+    {
+      "Events.timestamp_iso8601": "2020-02-27T00:00:00.000",
+      "Events.visitors": "69",
+      "Views.watched_sec": "6190"	
+    },
+    {
+      "Events.timestamp_iso8601": "2020-02-28T00:00:00.000",
+      "Events.visitors": "40",
+      "Views.watched_sec": "4069"
+    },
+    {
+      "Events.timestamp_iso8601": "2020-02-29T00:00:00.000",
+      "Events.visitors": "12",
+      "Views.watched_sec": "1953"
+    }
+  ],
+  "lastRefreshTime": "2020-03-02T21:10:48.579Z",
+  "usedPreAggregations": {},
+  "annotation": {
+    "measures": {
+      "Events.visitors": {
+        "title": "Events Visitors",
+        "shortTitle": "Visitors",
+        "type": "number"
+      },
+      "Views.watched_sec": {
+        "title": "Views Watched Sec",
+        "shortTitle": "Watched Sec",
+        "type": "number"
+      }
+    },
+    "dimensions": {},
+    "segments": {},
+    "timeDimensions": {
+      "Events.timestamp_iso8601": {
+        "title": "Events Timestamp Iso8601",
+        "shortTitle": "Timestamp Iso8601",
+        "type": "time"
+      }
+    }
+  }
+}
