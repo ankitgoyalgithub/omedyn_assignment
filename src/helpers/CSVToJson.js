@@ -29,7 +29,7 @@ async function getCsvData() {
 
                     dataDay.tz(result.data[i][9]);
                     rowData.push({
-                        day: dataDay.format('dddd') + "\n" + dataDay.format('MMM') + " " + dataDay.format('DD'),
+                        day: dataDay.format('dddd') + " " + dataDay.format('MMM') + " " + dataDay.format('DD'),
                         visitors: result.data[i][2],
                         sessions: result.data[i][3],
                         timeWatched: parseInt(seconds / 60).toString() + " mins " + parseInt(seconds % 60).toString() + " secs",

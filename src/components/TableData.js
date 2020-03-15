@@ -6,21 +6,29 @@ class TableData extends Component {
         super(props);
         this.state = {
             columnDefs: [{
-                headerName: "Day", field: "day"
+                headerName: "Day", field: "day",
+                cellRenderer: function (param) {
+                    let value = param.value;
+                    return (value.split(" ")[0] + '<br/>' + value.split(" ")[1] + " " + value.split(" ")[2]);
+                },
+                sortable: true, filter: true
             }, {
-                headerName: "Visitors", field: "visitors"
+                headerName: "Visitors", field: "visitors", sortable: true, filter: true
             }, {
-                headerName: "Sessions", field: "sessions"
+                headerName: "Sessions", field: "sessions", sortable: true, filter: true
             }, {
-                headerName: "Time Watched in minutes", field: "timeWatched"
+                headerName: "Time Watched in minutes", field: "timeWatched", sortable: true, filter: true
             }, {
-                headerName: "Ad-hoc Questions", field: "adhocQuestions"
+                headerName: "Ad-hoc Questions", field: "adhocQuestions", sortable: true, filter: true
             }, {
-                headerName: "Recommended Questions", field: "recQuestions"
+                headerName: "Recommended Questions", field: "recQuestions", sortable: true, filter: true
             }, {
-                headerName: "Topics", field: "topic"
+                headerName: "Topics", field: "topic", sortable: true, filter: true
             }],
             rowData: this.props.data_to_display,
+            gripOptions: {
+                'rowHeight': 50
+            }
         }
     }
 
@@ -29,13 +37,14 @@ class TableData extends Component {
             <div
                 className="ag-theme-balham"
                 style={{
-                    height: '500px',
-                    width: '1600px'
+                    height: '400px'
                 }}
             >
                 <AgGridReact
                     columnDefs={this.state.columnDefs}
-                    rowData={this.state.rowData}>
+                    rowData={this.state.rowData}
+                    gridOptions={this.state.gripOptions}>
+
                 </AgGridReact>
             </div>
         );

@@ -4,7 +4,7 @@ import './index.css';
 import 'ag-grid-community/dist/styles/ag-grid.css';
 import 'ag-grid-community/dist/styles/ag-theme-balham.css';
 import TableData from './components/TableData'
-import Demo from './components/Demo'
+import CombinationChart from './components/CombinationChart'
 import getCsvData from './helpers/CSVToJson'
 
 class Dashboard extends Component {
@@ -32,13 +32,15 @@ class Dashboard extends Component {
     }
     return (
       <div>
-        <p style={{ fontSize: '16px' }}>Data Table</p>
-        <div style={{ width: '100%' }}>
-          <TableData hello="helloName" data_to_display={this.state.table_data} />
+
+        <div style={{ width: '80%', margin: '0 auto' }}>
+          <p className='section-header' style={{ fontSize: '16px' }}>Data Table</p>
+          <TableData data_to_display={this.state.table_data} />
         </div>
-        <p style={{ fontSize: '16px' }}>Combination Chart</p>
-        <div>
-          <Demo />
+
+        <div style={{ width: '80%', margin: '0 auto' }}>
+          <p className='section-header' style={{ fontSize: '16px' }}>Combination Chart</p>
+          <CombinationChart />
         </div>
       </div>
     );
