@@ -44,7 +44,7 @@ const legendItems = [
     { value: 'Time', marker: { symbol: 'hyphen', stroke: '#fad248', radius: 5, lineWidth: 3 } },
 ];
 
-class Demo extends React.Component {
+class Demo extends Component {
     render() {
         return (<Chart height={400} width={500} forceFit data={dv} scale={scale} padding="auto" onGetG2Instance={(c) => {
             this.chart = c;
